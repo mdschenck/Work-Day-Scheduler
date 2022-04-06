@@ -50,9 +50,10 @@ schedHours = [
   hour21,
   hour22,
 ];
-
 schedHours = JSON.parse(localStorage.getItem("calendarList")) || [];
+
 localStorage.setItem("calendarList", JSON.stringify(schedHours));
+
 console.log(schedHours);
 
 //ON-LOAD EVENT?
@@ -86,9 +87,19 @@ var loadCalendar = function (event) {
 
 loadCalendar();
 
-var saveTask = function (event) {
+function setEventListeners() {
+  saveBtn.on("click", ".save", function (event) {
+    console.log("SAVE BUTTON CLICKED");
+    saveTask($(".save").index(this));
+    storeTask();
+  });
+}
+
+function storeTask() {
   localStorage.setItem("calendarList", JSON.stringify(schedHours));
   console.log("Updated:" + schedHours);
-};
+}
 
-saveBtn.addEventListener("click", saveTask);
+function saveTask(index) {
+  schedHours[index]["task"] = $(".editable").eq(index).text();
+}
