@@ -24,4 +24,10 @@ THEN the saved events persist
 
 # Useage
 
+On load, the user is presented with a workday calandar.
+
 ![Screenshot showing deployed website calendar display](assets/images/workdayCalendar-screenshot1.JPG)
+
+The user is able to save calendar entries with the save button, that persist on reload.
+
+![Screenshot showing deployed website calendar display](assets/images/workdayCalendar-screenshot3.JPG)
