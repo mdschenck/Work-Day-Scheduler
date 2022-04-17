@@ -2,6 +2,10 @@
 
 A easy to use planner to help manage time at work or outside of work!
 
+# Link to Deployed Application;
+
+https://mdschenck.github.io/Work-Day-Scheduler/
+
 # Description
 
 This web application uses dynamically created html elements to create an populate a calendar table on the page. Each hour displays a block where the user can enter text for tasks to be completed in that hour. When text is entered, the user can save their calendar by hitting the save button, writing the contents of the calendar to local storage. To increase utility for the user, the hour blocks change color based on the time of day, showing whether the tasks listed are in the past, at the current hour, or upcoming. Finally, the calendar uses moment.js to display the current day on load.
@@ -31,3 +35,7 @@ On load, the user is presented with a workday calandar.
 The user is able to save calendar entries with the save button, that persist on reload.
 
 ![Screenshot showing deployed website calendar display](assets/images/workdayCalendar-screenshot3.JPG)
+
+The user is also able to see which tasks are in the future, which task they should be working on at present, and which tasks are in the past based on the color of the line on the calendar.
+
+![Screenshot showing deployed website calendar display](assets/images/workdayCalendar-screenshot4.JPG)
